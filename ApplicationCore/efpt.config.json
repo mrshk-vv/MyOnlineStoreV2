@@ -1,0 +1,87 @@
+﻿{
+   "ContextClassName": "OnlinestoreContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Entities",
+   "ProjectRootNamespace": "ApplicationCore",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 2,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Buyers]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Categories]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Managers]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Manufacturer]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[OrderDetails]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[OrdersLogin]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[OrdersNoLogin]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[ProductDescription]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Products]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Sections]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[ShopcartItems]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[ShopcartItemsNoLogin]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Shopcarts]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[ShopcartsNoLogin]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Subcategories]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[SubcategoryDescriptionTitle]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseSpatial": false
+}

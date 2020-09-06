@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Buyer
+    public partial class Buyers
     {
-        public Buyer()
+        public Buyers()
         {
-            Shopcarts = new HashSet<Shopcart>();
+            Shopcarts = new HashSet<Shopcarts>();
         }
 
         public string Id { get; set; }
@@ -20,6 +20,6 @@ namespace ApplicationCore.Entities
         public string Region { get; set; }
         public string City { get; set; }
 
-        public virtual ICollection<Shopcart> Shopcarts { get; set; }
+        public virtual ICollection<Shopcarts> Shopcarts { get; set; }
     }
 }

@@ -11,6 +11,6 @@ namespace ApplicationCore.Entities
         public string DescriptionText { get; set; }
 
         public virtual SubcategoryDescriptionTitle DescriptionTitle { get; set; }
-        public virtual Product Product { get; set; }
+        public virtual Products Product { get; set; }
     }
 }

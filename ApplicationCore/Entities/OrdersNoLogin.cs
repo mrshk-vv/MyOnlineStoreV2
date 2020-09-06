@@ -17,6 +17,6 @@ namespace ApplicationCore.Entities
         public string City { get; set; }
 
         public virtual ShopcartItemsNoLogin Shopcart { get; set; }
-        public virtual OrderDetail OrderDetail { get; set; }
+        public virtual OrderDetails OrderDetails { get; set; }
     }
 }

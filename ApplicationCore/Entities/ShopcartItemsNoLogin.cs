@@ -8,15 +8,15 @@ namespace ApplicationCore.Entities
     {
         public ShopcartItemsNoLogin()
         {
-            OrdersNoLogins = new HashSet<OrdersNoLogin>();
+            OrdersNoLogin = new HashSet<OrdersNoLogin>();
         }
 
         public string ShopcartId { get; set; }
         public int ProductId { get; set; }
         public int? Quality { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual Products Product { get; set; }
         public virtual ShopcartsNoLogin Shopcart { get; set; }
-        public virtual ICollection<OrdersNoLogin> OrdersNoLogins { get; set; }
+        public virtual ICollection<OrdersNoLogin> OrdersNoLogin { get; set; }
     }
 }

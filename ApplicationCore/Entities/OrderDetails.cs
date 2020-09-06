@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class OrderDetail
+    public partial class OrderDetails
     {
         public int OrderId { get; set; }
         public string ManagerId { get; set; }
         public DateTime? ClosedDate { get; set; }
         public string Status { get; set; }
 
-        public virtual Manager Manager { get; set; }
+        public virtual Managers Manager { get; set; }
         public virtual OrdersLogin Order { get; set; }
         public virtual OrdersNoLogin OrderNavigation { get; set; }
     }

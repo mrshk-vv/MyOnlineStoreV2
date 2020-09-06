@@ -4,17 +4,17 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Section
+    public partial class Sections
     {
-        public Section()
+        public Sections()
         {
-            Categories = new HashSet<Category>();
+            Categories = new HashSet<Categories>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
         public string ImagePath { get; set; }
 
-        public virtual ICollection<Category> Categories { get; set; }
+        public virtual ICollection<Categories> Categories { get; set; }
     }
 }

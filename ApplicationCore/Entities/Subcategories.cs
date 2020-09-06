@@ -4,17 +4,21 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Manufacturer
+    public partial class Subcategories
     {
-        public Manufacturer()
+        public Subcategories()
         {
             Products = new HashSet<Products>();
+            SubcategoryDescriptionTitle = new HashSet<SubcategoryDescriptionTitle>();
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
+        public int CategoryId { get; set; }
+        public string Description { get; set; }
         public string ImagePath { get; set; }
 
+        public virtual Categories Category { get; set; }
         public virtual ICollection<Products> Products { get; set; }
+        public virtual ICollection<SubcategoryDescriptionTitle> SubcategoryDescriptionTitle { get; set; }
     }
 }

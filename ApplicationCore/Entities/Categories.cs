@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Category
+    public partial class Categories
     {
-        public Category()
+        public Categories()
         {
-            Products = new HashSet<Product>();
-            Subcategories = new HashSet<Subcategory>();
+            Products = new HashSet<Products>();
+            Subcategories = new HashSet<Subcategories>();
         }
 
         public int Id { get; set; }
@@ -18,8 +18,8 @@ namespace ApplicationCore.Entities
         public string Description { get; set; }
         public string ImagePath { get; set; }
 
-        public virtual Section Section { get; set; }
-        public virtual ICollection<Product> Products { get; set; }
-        public virtual ICollection<Subcategory> Subcategories { get; set; }
+        public virtual Sections Section { get; set; }
+        public virtual ICollection<Products> Products { get; set; }
+        public virtual ICollection<Subcategories> Subcategories { get; set; }
     }
 }

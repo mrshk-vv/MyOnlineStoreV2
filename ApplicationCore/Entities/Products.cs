@@ -4,13 +4,12 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Product
+    public partial class Products
     {
-        public Product()
+        public Products()
         {
-            ProductDescriptions = new HashSet<ProductDescription>();
-            ShopcartItems = new HashSet<ShopcartItem>();
-            ShopcartItemsNoLogins = new HashSet<ShopcartItemsNoLogin>();
+            ShopcartItems = new HashSet<ShopcartItems>();
+            ShopcartItemsNoLogin = new HashSet<ShopcartItemsNoLogin>();
         }
 
         public int Id { get; set; }
@@ -23,11 +22,10 @@ namespace ApplicationCore.Entities
         public string ImagePath { get; set; }
         public bool? IsVisible { get; set; }
 
-        public virtual Category Category { get; set; }
+        public virtual Categories Category { get; set; }
         public virtual Manufacturer Manufacturer { get; set; }
-        public virtual Subcategory Subcategory { get; set; }
-        public virtual ICollection<ProductDescription> ProductDescriptions { get; set; }
-        public virtual ICollection<ShopcartItem> ShopcartItems { get; set; }
-        public virtual ICollection<ShopcartItemsNoLogin> ShopcartItemsNoLogins { get; set; }
+        public virtual Subcategories Subcategory { get; set; }
+        public virtual ICollection<ShopcartItems> ShopcartItems { get; set; }
+        public virtual ICollection<ShopcartItemsNoLogin> ShopcartItemsNoLogin { get; set; }
     }
 }

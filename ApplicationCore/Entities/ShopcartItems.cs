@@ -4,19 +4,19 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class ShopcartItem
+    public partial class ShopcartItems
     {
-        public ShopcartItem()
+        public ShopcartItems()
         {
-            OrdersLogins = new HashSet<OrdersLogin>();
+            OrdersLogin = new HashSet<OrdersLogin>();
         }
 
         public string ShopcartId { get; set; }
         public int ProductId { get; set; }
         public int? Quality { get; set; }
 
-        public virtual Product Product { get; set; }
-        public virtual Shopcart Shopcart { get; set; }
-        public virtual ICollection<OrdersLogin> OrdersLogins { get; set; }
+        public virtual Products Product { get; set; }
+        public virtual Shopcarts Shopcart { get; set; }
+        public virtual ICollection<OrdersLogin> OrdersLogin { get; set; }
     }
 }

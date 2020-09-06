@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Manager
+    public partial class Managers
     {
-        public Manager()
+        public Managers()
         {
-            OrderDetails = new HashSet<OrderDetail>();
+            OrderDetails = new HashSet<OrderDetails>();
         }
 
         public string Id { get; set; }
@@ -18,6 +18,6 @@ namespace ApplicationCore.Entities
         public int Phonenumber { get; set; }
         public string Email { get; set; }
 
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<OrderDetails> OrderDetails { get; set; }
     }
 }

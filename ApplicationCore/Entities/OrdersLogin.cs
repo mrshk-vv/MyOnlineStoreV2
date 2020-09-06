@@ -11,7 +11,7 @@ namespace ApplicationCore.Entities
         public decimal? TotalPrice { get; set; }
         public DateTime? ScheduledDate { get; set; }
 
-        public virtual ShopcartItem Shopcart { get; set; }
-        public virtual OrderDetail OrderDetail { get; set; }
+        public virtual ShopcartItems Shopcart { get; set; }
+        public virtual OrderDetails OrderDetails { get; set; }
     }
 }

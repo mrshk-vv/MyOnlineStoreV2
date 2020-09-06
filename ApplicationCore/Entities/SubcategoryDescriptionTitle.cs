@@ -6,16 +6,10 @@ namespace ApplicationCore.Entities
 {
     public partial class SubcategoryDescriptionTitle
     {
-        public SubcategoryDescriptionTitle()
-        {
-            ProductDescriptions = new HashSet<ProductDescription>();
-        }
-
         public int Id { get; set; }
         public int SubcategoryId { get; set; }
         public string Title { get; set; }
 
-        public virtual Subcategory Subcategory { get; set; }
-        public virtual ICollection<ProductDescription> ProductDescriptions { get; set; }
+        public virtual Subcategories Subcategory { get; set; }
     }
 }

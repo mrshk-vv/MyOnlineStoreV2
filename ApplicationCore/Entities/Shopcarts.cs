@@ -4,12 +4,12 @@ using System.Collections.Generic;
 
 namespace ApplicationCore.Entities
 {
-    public partial class Shopcart
+    public partial class Shopcarts
     {
         public string Id { get; set; }
         public string BuyerId { get; set; }
 
-        public virtual Buyer Buyer { get; set; }
-        public virtual ShopcartItem ShopcartItem { get; set; }
+        public virtual Buyers Buyer { get; set; }
+        public virtual ShopcartItems ShopcartItems { get; set; }
     }
 }
